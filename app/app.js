@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import webpackConfig from '../webpack.config';
 import webpackDevMiddleware from 'webpack-dev-middleware';
+import webpackHotMiddleware from 'webpack-hot-middleware';
 import express from 'express';
 
 const app = express();
@@ -13,6 +14,10 @@ app.use(webpackDevMiddleware(compiler, {
     poll: true
   },
   publicPath: webpackConfig.output.publicPath
+}));
+
+app.use(webpackHotMiddleware(compiler, {
+  log: console.log
 }));
 
 app.use(express.static('./public'));
