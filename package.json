@@ -1,10 +1,10 @@
 {
-  "name": "es6-project-demo",
+  "name": "react-es6-webpack-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node app/server.js --ignore 'node_modules/' || exit 0",
+    "start": "webpack-dev-server --progress --colors || exit 0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,16 +17,11 @@
     "css-loader": "^0.23.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
-    "webpack-dev-middleware": "^1.6.1",
-    "webpack-hot-middleware": "^2.12.2"
+    "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-react": "^6.11.1",
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "jquery": "^3.1.0",
-    "lodash": "^4.14.1",
     "react": "^15.3.0",
     "react-dom": "^15.3.0"
   }
