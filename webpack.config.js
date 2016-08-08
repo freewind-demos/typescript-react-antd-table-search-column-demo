@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 module.exports = {
   entry: [
-    './public/entry.js',
+    './public/entry.jsx',
     'webpack-hot-middleware/client'
   ],
   output: {
@@ -12,11 +12,11 @@ module.exports = {
   },
   module: {
     loaders: [{
-      test: /\.js$/,
+      test: /\.(js|jsx)$/,
       exclude: /node_modules/,
       loader: 'babel',
       query: {
-        presets: ['es2015']
+        presets: ['es2015', 'react']
       }
     }]
   },
