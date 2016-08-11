@@ -1,11 +1,11 @@
-import React from 'react';
+import React,{Component} from 'react';
 
-class Hello extends React.Component {
-    render() {
-        return (<div>
-            <h1>Hello world</h1>
-            </div>)
-    }
+class Hello extends Component {
+	render() {
+		return <div>
+		  <h1>Hello world</h1>
+		</div>;
+	}
 }
 
 export default Hello;
