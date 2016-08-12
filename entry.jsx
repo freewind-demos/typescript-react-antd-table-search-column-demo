@@ -7,8 +7,3 @@ ReactDOM.render(
   document.getElementById("content")
 );
 
-// Notice!!!
-// Following is required to make reloading happen
-if (module.hot) {
-  module.hot.accept();
-}
