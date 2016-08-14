@@ -1,7 +1,7 @@
-React Props Demo
+React Hello World Demo
 ======================
 
-Pass value to other component as props.
+Just say hello from react.
 
 ```
 npm install
