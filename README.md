@@ -1,11 +1,11 @@
-React Hello World Demo
-======================
+JavaScript React Base Demo (Latest)
+===================================
 
-Just say hello from react.
+Always update with latest versions and technologies.
 
 ```
 npm install
-npm start
+npm run dev
 ```
 
-Then visit <http://localhost:8080/webpack-dev-server/>.
+Then visit <http://localhost:8080/>.

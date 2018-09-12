@@ -1,18 +1,28 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
-  entry: './entry.jsx',
-  output: {
-    path: __dirname,
-    publicPath: '/assets/',
-    filename: 'bundle.js'
-  },
-  module: {
-    loaders: [{
-      test: /\.(js|jsx)$/,
-      exclude: /node_modules/,
-      loader: 'babel',
-      query: {
-        presets: ['es2015', 'react']
-      }
-    }]
-  }
+    mode: 'development',
+    entry: './entry.jsx',
+    output: {
+        path: __dirname,
+        filename: 'bundle.js'
+    },
+    module: {
+        rules: [{
+            test: /\.(js|jsx)$/,
+            exclude: /node_modules/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: [
+                        '@babel/preset-env',
+                        '@babel/preset-react'
+                    ]
+                }
+            }
+        }]
+    },
+    plugins: [
+        new HtmlWebpackPlugin()
+    ]
 }
