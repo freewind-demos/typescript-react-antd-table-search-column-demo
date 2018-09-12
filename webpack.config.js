@@ -2,24 +2,20 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: 'development',
-    entry: './entry.jsx',
+    entry: './entry.tsx',
+    devtool: "inline-source-map",
     output: {
         path: __dirname,
         filename: 'bundle.js'
     },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js']
+    },
     module: {
         rules: [{
-            test: /\.(js|jsx)$/,
-            exclude: /node_modules/,
-            use: {
-                loader: 'babel-loader',
-                options: {
-                    presets: [
-                        '@babel/preset-env',
-                        '@babel/preset-react'
-                    ]
-                }
-            }
+            test: /\.tsx?$/,
+            loader: 'ts-loader',
+            exclude: /node_modules/
         }]
     },
     plugins: [
