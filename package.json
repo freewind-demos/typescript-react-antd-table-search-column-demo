@@ -1,23 +1,22 @@
 {
   "scripts": {
-    "dev": "webpack-serve --open",
-    "pack": "webpack --display-modules"
+    "demo": "webpack-dev-server --open"
   },
   "dependencies": {
-    "react": "latest",
-    "react-dom": "latest"
+    "react": "16.7.0",
+    "react-dom": "16.7.0"
   },
   "devDependencies": {
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "css-loader": "latest",
-    "html-webpack-plugin": "latest",
-    "source-map-loader": "latest",
-    "style-loader": "latest",
-    "ts-loader": "latest",
-    "typescript": "latest",
-    "webpack": "latest",
-    "webpack-cli": "latest",
-    "webpack-serve": "latest"
+    "@types/react": "16.7.19",
+    "@types/react-dom": "16.0.11",
+    "css-loader": "2.1.0",
+    "html-webpack-plugin": "3.2.0",
+    "source-map-loader": "0.2.4",
+    "style-loader": "0.23.1",
+    "ts-loader": "5.3.3",
+    "typescript": "3.2.2",
+    "webpack": "4.28.4",
+    "webpack-cli": "3.2.1",
+    "webpack-dev-server": "3.1.14"
   }
 }
