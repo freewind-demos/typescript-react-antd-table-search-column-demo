@@ -6,4 +6,4 @@ npm install
 npm run demo
 ```
 
-It will open <http://localhost:8080/> automatically.
+It will open page on browser automatically.
