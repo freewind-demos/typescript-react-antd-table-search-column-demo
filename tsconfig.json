@@ -9,7 +9,8 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "jsx": "react",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
   },
   "exclude": [
     "node_modules"
