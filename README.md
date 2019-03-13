@@ -1,4 +1,4 @@
-JavaScript React Hello World Demo
+TypeScript React Hello World Demo
 =================================
 
 ```
