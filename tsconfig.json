@@ -2,12 +2,7 @@
   "compilerOptions": {
     "strict": true,
     "target": "es6",
-    "module": "amd",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "moduleResolution": "node",
-    "sourceMap": true,
+    "module": "commonjs",
     "jsx": "react",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
