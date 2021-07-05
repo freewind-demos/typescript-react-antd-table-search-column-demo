@@ -14,12 +14,12 @@ export function tableColumnTextFilterConfig<T>(): ColumnType<T> {
           placeholder={'Search'}
           value={selectedKeys[0]}
           onChange={(e) => setSelectedKeys(e.target.value ? [e.target.value] : [])}
-          onPressEnter={confirm}
+          onPressEnter={()=>confirm}
           style={{width: 188, marginBottom: 8, display: 'block'}}
         />
         <Button
           type="primary"
-          onClick={confirm}
+          onClick={()=>confirm}
           icon={<SearchOutlined/>}
           size="small"
           style={{width: 90, marginRight: 8}}
