@@ -19,7 +19,7 @@ export function tableColumnTextFilterConfig<T>(): ColumnType<T> {
         />
         <Button
           type="primary"
-          onClick={()=>confirm}
+          onClick={()=>confirm()}
           icon={<SearchOutlined/>}
           size="small"
           style={{width: 90, marginRight: 8}}
